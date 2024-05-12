@@ -6,10 +6,18 @@ import { Link } from "react-router-dom";
 
 import News from "./News";
 import Cryptocurrencies from "./Cryptocurrencies";
+import { useGetCryptosQuery } from "../services/cryptoApi";
 
 const { Title } = Typography;
 
 const Homepage = () => {
+    // easy data
+    const { data, isFetching } = useGetCryptosQuery();
+    const globalStats = data?.data?.stats;
+
+    if (isFetching) return "Loading...";
+    console.log(data);
+
     return (
         <>
             <Title level={2} className="heading">
