@@ -20,7 +20,7 @@ const App = () => (
                     style={{ color: "white", textAlign: "center" }}
                 >
                     Copyright © 2024
-                    <Link to="/">Crypto Tracker</Link> <br />
+                    <Link to="/"> Crypto Tracker </Link> <br />
                     All Rights Reserved.
                 </Typography.Title>
                 <Space>
