@@ -4,7 +4,6 @@ import millify from "millify";
 import { Typography, Row, Col, Statistic } from "antd";
 import { Link } from "react-router-dom";
 
-import News from "./News";
 import Cryptocurrencies from "./Cryptocurrencies";
 import Loader from "./Loader";
 import { useGetCryptosQuery } from "../services/cryptoApi";
@@ -64,15 +63,6 @@ const Homepage = () => {
                 </Title>
             </div>
             <Cryptocurrencies simplified />
-            <div className="home-heading-container">
-                <Title level={2} className="home-title">
-                    Latest Crypto News
-                </Title>
-                <Title level={3}>
-                    <Link to="/news">Show more</Link>
-                </Title>
-            </div>
-            <News simplified />
         </>
     );
 };
