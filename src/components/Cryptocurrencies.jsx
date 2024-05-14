@@ -18,7 +18,7 @@ const Cryptocurrencies = ({ simplified }) => {
         if (simplified) filteredData.splice(10);
 
         setCryptos(filteredData);
-    }, [cryptosList, searchTerm]);
+    }, [cryptosList, searchTerm, simplified]);
 
     if (isFetching) return <Loader />;
 
@@ -54,6 +54,7 @@ const Cryptocurrencies = ({ simplified }) => {
                                     <img
                                         className="crypto-image"
                                         src={currency.iconUrl}
+                                        alt=""
                                     />
                                 }
                                 hoverable
