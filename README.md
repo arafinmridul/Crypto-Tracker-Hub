@@ -1,3 +1,7 @@
+# App Screenshots
+![Screenshot 2024-05-15 123515](https://github.com/arafinmridul/Crypto-Tracker-Hub/assets/110626481/ac922d30-ca84-4cb2-8185-d849aed03746)
+![Screenshot 2024-05-15 123534](https://github.com/arafinmridul/Crypto-Tracker-Hub/assets/110626481/32c65ff7-efe8-4d8e-922b-85441b865607)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
