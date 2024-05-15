@@ -18,11 +18,26 @@ export const cryptoApi = createApi({
         getCryptos: builder.query({
             query: () => createRequest("/coins"),
         }),
+
+        getCryptoDetails: builder.query({
+            query: (coinId) => createRequest(`/coin/${coinId}`),
+        }),
+
+        getCryptoHistory: builder.query({
+            query: ({ coinId, timeperiod }) =>
+                createRequest(
+                    `coin/${coinId}/history?timeperiod=${timeperiod}`
+                ),
+        }),
     }),
 });
 
 // aligned with getCryptos to make automated hook
-export const { useGetCryptosQuery } = cryptoApi;
+export const {
+    useGetCryptosQuery,
+    useGetCryptoDetailsQuery,
+    useGetCryptoHistoryQuery,
+} = cryptoApi;
 
 // try {
 //     const response = await axios.request(options);
