@@ -17,18 +17,20 @@ const Homepage = () => {
 
     if (isFetching) return <Loader />;
 
+    console.log(globalStats.total);
+
     return (
         <>
             <Title level={2} className="heading">
                 Global Crypto Stats
             </Title>
             <Row gutter={[32, 32]}>
-                <Col span={12}>
+                {/* <Col span={12}>
                     <Statistic
                         title="Total Cryptocurrencies"
-                        value={millify(globalStats.total)}
+                        // value={millify(globalStats.total)}
                     />
-                </Col>
+                </Col> */}
                 <Col span={12}>
                     <Statistic
                         title="Total Exchanges"
