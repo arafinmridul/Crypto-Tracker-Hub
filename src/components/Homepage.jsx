@@ -17,8 +17,6 @@ const Homepage = () => {
 
     if (isFetching) return <Loader />;
 
-    console.log(globalStats.total);
-
     return (
         <>
             <Title level={2} className="heading">
